@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+  var arr=['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33'];
+var arr2=[];
+  for (var i=0;i<6 ;i++ ){
+	//随机范围0~9
+	//0~1 * 10  0~9.x  向下取整   0~9
+	var index=Math.floor(Math.random()*arr.length);
+	//console.log(arr[index]);
+	//把取到的随机元素添加到数组arr2
+	arr2.push(arr[index]);
+    //把取到的元素在原数组中删除，长度会发生变化
+	arr.splice(index,1);
+}
+var arr3=['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16'];
+var index1=Math.floor(Math.random()*arr3.length);
+
+arr2.sort(function(a,b){return a-b});
+alert('双色球：'+arr2+'  +  '+index1)
+</script>
+</body>
+</html>  
