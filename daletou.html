@@ -31,8 +31,8 @@ for (var i=0;i<2 ;i++ ){
     //把取到的元素在原数组中删除，长度会发生变化
 	arr3.splice(index,1);
 }
-arr2.sort(function(a,b){return a-b});
-arr4.sort(function(a,b){return a-b});
+arr2.sort((a,b)=>a-b);
+arr4.sort((a,b)=>a-b);
 alert('大乐透：'+arr2+'  +  '+arr4);
 </script>
 </body>
